@@ -3,7 +3,7 @@
 //  teste1
 //
 //  Created by Aluno on 22/11/16.
-//  Copyright © 2016 akanbi. All rights reserved.
+//  Copyright © 2016 targettrustt. All rights reserved.
 //
 
 import UIKit
@@ -20,9 +20,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
-    @IBAction func btnViewAzul(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "segueAzul", sender: self)
+    @IBAction func btnViewBlue(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "segueBlue", sender: self)
     }
+
 }
 

@@ -3,7 +3,7 @@
 //  teste1
 //
 //  Created by Aluno on 22/11/16.
-//  Copyright © 2016 akanbi. All rights reserved.
+//  Copyright © 2016 targettrustt. All rights reserved.
 //
 
 import UIKit
