@@ -24,5 +24,24 @@ class ViewController: UIViewController {
         self.performSegue(withIdentifier: "segueBlue", sender: self)
     }
 
+    @IBAction func btnViewGreen(_ sender: UIButton) {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let vc = storyboard.instantiateViewController(withIdentifier: "GreenViewController") as! GreenViewController
+        
+        vc.teste = "Hello World"
+        
+        self.show(vc, sender: self)
+        
+    }
+    @IBAction func btnViewGray(_ sender: UIButton) {
+        let vc = GrayViewController(nibName: "GrayViewController", bundle: nil)
+        
+        vc.stringLabel = "Ola Gustavo"
+        
+        self.present(vc, animated: true, completion: nil)
+        
+    }
 }
 

@@ -35,11 +35,42 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJq-q3-X9a">
-                                <frame key="frameInset" minX="190" minY="160" width="46" height="30"/>
+                                <frame key="frameInset" minX="103" minY="160" width="133" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Azul by Segue"/>
+                                <connections>
+                                    <action selector="btnViewBlue:" destination="yxy-AF-iep" eventType="touchUpInside" id="2eg-s4-A4q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMa-MG-bVt">
+                                <frame key="frameInset" minX="112" minY="214" width="114" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Verde by Code">
+                                    <color key="titleColor" red="0.92601364630000005" green="1" blue="0.0001922522367" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnViewGreen:" destination="yxy-AF-iep" eventType="touchUpInside" id="4JF-wR-4oF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4OM-b9-IWM">
+                                <frame key="frameInset" minX="146" minY="318" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="btnViewBlue:" destination="yxy-AF-iep" eventType="touchUpInside" id="2eg-s4-A4q"/>
+                                    <action selector="btnViewGreen:" destination="yxy-AF-iep" eventType="touchUpInside" id="ndj-Ib-vMC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WE2-sO-qHI">
+                                <frame key="frameInset" minX="146" minY="410" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4SY-Ui-fgr">
+                                <frame key="frameInset" minX="146" minY="410" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btnViewGray:" destination="yxy-AF-iep" eventType="touchUpInside" id="6Q0-DD-ujV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -54,10 +85,10 @@
             </objects>
             <point key="canvasLocation" x="503.19999999999999" y="-301.79910044977515"/>
         </scene>
-        <!--View Controller-->
+        <!--Green View Controller-->
         <scene sceneID="TSW-gx-rnY">
             <objects>
-                <viewController id="wiM-65-doY" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GreenViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wiM-65-doY" customClass="GreenViewController" customModule="teste1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="B1B-02-zcN"/>
                         <viewControllerLayoutGuide type="bottom" id="pfm-UW-W1c"/>
@@ -65,12 +96,24 @@
                     <view key="view" contentMode="scaleToFill" id="kH0-Tp-NUO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sF2-79-o5Z">
+                                <frame key="frameInset" minX="59" minY="118" width="175" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="lblNome" destination="sF2-79-o5Z" id="xQb-dB-VkT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sDA-Pb-OOA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1357" y="164"/>
+            <point key="canvasLocation" x="1356" y="163.26836581709148"/>
         </scene>
         <!--New View-->
         <scene sceneID="oCk-8x-63l">
