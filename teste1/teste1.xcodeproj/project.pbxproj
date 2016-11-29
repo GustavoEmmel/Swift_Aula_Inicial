@@ -10,6 +10,7 @@
 		5704C4CE1DE7917B0092CF14 /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5704C4CD1DE7917B0092CF14 /* GreenViewController.swift */; };
 		5704C4D11DE7AAD50092CF14 /* GrayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5704C4CF1DE7AAD50092CF14 /* GrayViewController.swift */; };
 		5704C4D21DE7AAD50092CF14 /* GrayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5704C4D01DE7AAD50092CF14 /* GrayViewController.xib */; };
+		575187A51DEE2D6200DC065F /* testeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575187A41DEE2D6200DC065F /* testeView.swift */; };
 		579B2D551DE50B31002A10BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579B2D541DE50B31002A10BF /* AppDelegate.swift */; };
 		579B2D571DE50B31002A10BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579B2D561DE50B31002A10BF /* ViewController.swift */; };
 		579B2D5A1DE50B31002A10BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 579B2D581DE50B31002A10BF /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 		5704C4CD1DE7917B0092CF14 /* GreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
 		5704C4CF1DE7AAD50092CF14 /* GrayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrayViewController.swift; sourceTree = "<group>"; };
 		5704C4D01DE7AAD50092CF14 /* GrayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GrayViewController.xib; sourceTree = "<group>"; };
+		575187A41DEE2D6200DC065F /* testeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testeView.swift; sourceTree = "<group>"; };
 		579B2D511DE50B31002A10BF /* teste1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = teste1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		579B2D541DE50B31002A10BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		579B2D561DE50B31002A10BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				579B2D541DE50B31002A10BF /* AppDelegate.swift */,
+				575187A41DEE2D6200DC065F /* testeView.swift */,
 				579B2D561DE50B31002A10BF /* ViewController.swift */,
 				5704C4CF1DE7AAD50092CF14 /* GrayViewController.swift */,
 				5704C4D01DE7AAD50092CF14 /* GrayViewController.xib */,
@@ -103,7 +106,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = targettrustt;
 				TargetAttributes = {
 					579B2D501DE50B31002A10BF = {
@@ -151,6 +154,7 @@
 			files = (
 				5704C4CE1DE7917B0092CF14 /* GreenViewController.swift in Sources */,
 				579B2D671DE5113B002A10BF /* NewView.swift in Sources */,
+				575187A51DEE2D6200DC065F /* testeView.swift in Sources */,
 				579B2D571DE50B31002A10BF /* ViewController.swift in Sources */,
 				5704C4D11DE7AAD50092CF14 /* GrayViewController.swift in Sources */,
 				579B2D551DE50B31002A10BF /* AppDelegate.swift in Sources */,
@@ -197,6 +201,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -247,6 +252,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

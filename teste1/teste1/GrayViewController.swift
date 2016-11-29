@@ -15,6 +15,18 @@ class GrayViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //Timer.scheduledTimer(timeInterval: 10.0, target: self, selector: #selector(update), userInfo: nil, repeats: true)
+        
+        Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: {(timer) in
+         
+            print("atualizou")
+            
+            guard self.progressBar.progress < 1 else { timer.invalidate(); return}
+            
+            self.progressBar.setProgress(self.progressBar.progress + 0.1, animated: true)
+            
+        })
+        
         // Do any additional setup after loading the view.
     }
 
@@ -27,6 +39,16 @@ class GrayViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
 
+    @IBOutlet weak var progressBar: UIProgressView!
+    
+    func update()->Void{
+        print("atualizou")
+        
+        
+        
+        self.progressBar.setProgress(self.progressBar.progress + 0.1, animated: true)
+    }
+    
     /*
     // MARK: - Navigation
 
